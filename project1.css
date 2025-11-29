@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project {
+    color: white;
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+
+}
+
+.project h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.heading h2 {
+    font-size: 100px;
+    margin: 10px;
+    position: relative;
+    animation: head 2s linear forwards;
+
+}
+
+.heading h2 span {
+    color: #D6D6D68A;
+    position: relative;
+    animation: head2 5s linear forwards;
+}
+
+.heading {
+    padding: 10px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    animation: bor 2s linear forwards;
+}
+
+.project-scroll {
+    overflow: hidden;
+
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    height: 450px;
+    animation: projects 3s ease-in forwards;
+    position: relative;
+}
+
+.projects {
+    display: flex;
+    width: 1600px;
+    overflow: hidden;
+    height: 100%;
+    /* overflow: auto; */
+    gap: 20px;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+
+}
+
+.project-card {
+    border-radius: 20px;
+    transition: 1s;
+    object-fit: cover;
+    width: 300px;
+    border-radius: 10px;
+    height: 350px;
+    position: relative;
+
+}
+
+.project-card img {
+    width: 300px;
+    margin: 20px;
+    height: 350px;
+    /* object-fit: cover; */
+
+    transition: 0.5s;
+
+}
+
+.tamil1 {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    z-index: 99;
+    left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    opacity: 0;
+    transition: 1s;
+}
+
+.tamil {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    z-index: 99;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    opacity: 0;
+    transition: 1s;
+}
+
+.project-card:hover img {
+    transform: rotateZ(1deg);
+}
+
+.project-card:hover .tamil {
+    opacity: 1;
+    bottom: -60px;
+}
+
+.project-card:hover .tamil1 {
+    opacity: 1;
+    bottom: -60px;
+}
+
+
+.project1 {
+    min-height: 100vh;
+    position: absolute;
+    color: white;
+    padding-top: 70px;
+    width: 100%;
+}
+
+.sub-project {
+    display: flex;
+    margin-top: 20px;
+}
+
+.project-left {
+    width: 50%;
+}
+
+.project-right {
+    width: 50%;
+}
+
+.project-right h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    animation: headingh1 2s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    position: relative;
+    left: -100px;
+}
+
+.project-right h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    animation: headingh2 2s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    position: relative;
+    left: -100px;
+}
+
+.project-right p {
+    font-size: 20px;
+    width: 50%;
+    animation: headingphara 2s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+   
+}
+
+.project-left img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    border-radius: 60%;
+    opacity: 0;
+    animation: projectdetails 3s linear forwards;
+    animation-delay: 2s;
+}
+
+.project-right {
+    padding: 30px;
+}
+
+.pro {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    right: -400px;
+    bottom: 0;
+    animation: pro 3s linear forwards;
+    animation-delay: 1s;
+}
+button{
+position: absolute;
+padding: 10px 20px;
+background-color: #D6D6D68A;
+color: white;
+top: 150px;
+right: 50px;
+border-radius: 10px;
+border: none;
+animation: btn 2s linear forwards;
+animation-delay: 4.5s;
+opacity: 0;
+}
+
+
+@keyframes btn {
+    from {
+       
+        opacity: 0;
+    }
+
+    to {
+      
+        opacity: 1;
+    }
+
+
+}
+@keyframes headingphara {
+    from {
+       
+        opacity: 0;
+    }
+
+    to {
+      
+        opacity: 1;
+    }
+
+
+}
+@keyframes headingh2 {
+    from {
+        left: -100px;
+        opacity: 0.1;
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes headingh1 {
+    from {
+        left: -100px;
+        opacity: 0.1;
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes pro {
+    from {
+        right: -400px;
+    }
+
+    to {
+        right: 0;
+
+    }
+
+}
+
+@keyframes projectdetails {
+    from {
+        left: 35%;
+        opacity: 1;
+        border-radius: 50px;
+    }
+
+    to {
+        left: 0;
+        height: 600px;
+        opacity: 1;
+        width: 50%;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+@keyframes projects {
+    form {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: -2000px;
+        opacity: 0;
+
+    }
+
+}
+
+
+
+
+@keyframes head2 {
+    from {
+        top: 0px;
+        opacity: 1;
+    }
+
+    to {
+        top: -200px;
+        opacity: 0;
+    }
+}
+
+@keyframes head {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: -500px;
+        opacity: 0;
+    }
+
+}
+
+@keyframes bor {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@media only screen and (min-width:300px) and (max-width:720px){
+    .sub-project{
+        flex-direction: column;
+    }
+    .project-left{
+        height: 550px;
+    }
+    .pro{
+        display: none;
+    }
+    .project-left{
+        width: 90%;
+    }
+    .project-left img{
+        width: 90%;
+    }
+    .project-right{
+        width: 90%;
+    }
+}
